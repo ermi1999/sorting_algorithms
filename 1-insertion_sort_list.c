@@ -1,62 +1,41 @@
 #include "sort.h"
-
 /**
- * len_list - returns the length of a linked list
- * @h: pointer to the list
- *
- * Return: length of list
- */
-int len_list(listint_t *h)
-{
-	int len = 0;
-
-	while (h)
-	{
-		len++;
-		h = h->next;
-	}
-	return (len);
-}
-
-/**
- * insertion_sort_list - sorts a linked list with the Insert Sort algorithm
- * @list: double pointer to the list to sort
+ * insertion_sort_list - sorts a doubly linked list.
+ * @list: The list.
+ * Return: Nothing.
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *curr, *prev, *temp;
+	listint_t *current;
 
-	if (!list || !(*list) || len_list(*list) < 2)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
 
-	curr = (*list)->next;
-
-	while (curr)
+	current = (*list)->next;
+	while (current != NULL)
 	{
-		temp = curr;
-		prev = curr->prev;
+		listint_t *temp = current->next;
+		listint_t *prev = current->prev;
 
-		while (prev && temp->n < prev->n)
+		while (prev != NULL && prev->n > current->n)
 		{
-			/* Swap nodes */
-			if (temp->next)
-				temp->next->prev = prev;
-			prev->next = temp->next;
-			temp->prev = prev->prev;
-			temp->next = prev;
-			if (prev->prev)
-				prev->prev->next = temp;
+			prev->next = current->next;
+			if (current->next != NULL)
+				current->next->prev = prev;
+
+			current->next = prev;
+			current->prev = prev->prev;
+
+			if (prev->prev != NULL)
+				prev->prev->next = current;
 			else
-				*list = temp;
-			prev->prev = temp;
+				*list = current;
 
-			/* Move temp and prev pointers */
-			prev = temp->prev;
-			temp = prev ? prev->next : *list;
-
+			prev->prev = current;
+			prev = current->prev;
 			print_list(*list);
 		}
 
-		curr = curr->next;
+		current = temp;
 	}
 }
