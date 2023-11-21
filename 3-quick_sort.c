@@ -70,4 +70,3 @@ void quick_sort(int *array, size_t size)
 
 	quicksort_recursive(array, 0, size - 1, size);
 }
-
