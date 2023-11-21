@@ -6,7 +6,7 @@
  * @from: the array to be copied from.
  * @to: The array to be copied to.
  * @size: The size of the array.
- * @Return: nothing.
+ * Return: nothing.
  */
 void copy_array(int *from, int *to, size_t size)
 {
@@ -23,7 +23,7 @@ void copy_array(int *from, int *to, size_t size)
  * @middle: The middle of the array.
  * @end: The end of the array.
  * @second: the second array.
- * @Return: Nothing.
+ * Return: Nothing.
  */
 void merge(int *first, int begin, int middle, int end, int *second)
 {
@@ -60,7 +60,7 @@ void merge(int *first, int begin, int middle, int end, int *second)
  * @begin: The start of the array.
  * @end: The end of the array.
  * @second: The array to merge from.
- * @Return: Nothing.
+ * Return: Nothing.
  */
 void split_merge(int *first, int begin, int end, int *second)
 {
@@ -79,7 +79,7 @@ void split_merge(int *first, int begin, int end, int *second)
  * merge_sort - sorts an array using merge sort algorythm.
  * @array: The array.
  * @size: The size of the array.
- * @Return: Nothing.
+ * Return: Nothing.
  */
 void merge_sort(int *array, size_t size)
 {
