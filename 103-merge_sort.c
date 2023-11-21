@@ -1,8 +1,6 @@
 #include "sort.h"
 #include <stdio.h>
 #include <stdlib.h>
-
-
 /**
  * copy_array - copies an array.
  * @from: the array to be copied from.
