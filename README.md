@@ -19,5 +19,6 @@ Tasks
 Prints the list after each swap.
 1-O: Text file containing the best, average, and worst case time complexities of the Insertion Sort algorithm, one per line
 
-2. 
+2. `
+ a function that sorts an array of integers in ascending order using the Selection sort algorithm
 
