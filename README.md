@@ -87,4 +87,8 @@ You’re expected to print the list after each time you swap two elemen
 7. Merge sort
 Write a function that sorts an array of integers in ascending order using the Merge sort algorithm
 
+8.  Heap sort
+Write a function that sorts an array of integers in ascending order using the Heap sort algorithm
+
+
 
