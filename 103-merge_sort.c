@@ -52,7 +52,7 @@ void merge(int *first, int begin, int middle, int end, int *second)
 			j++;
 		}
 	}
-	printf("Done ");
+	printf("[Done]: ");
 	print_array(first + begin, end - begin);
 }
 
