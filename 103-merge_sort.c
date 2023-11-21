@@ -36,9 +36,9 @@ void merge(int *first, int begin, int middle, int end, int *second)
 
 	printf("Merging...\n");
 	printf("[left]: ");
-	print_array(first + begin, middle - begin);
+	print_array(second + begin, middle - begin);
 	printf("[right]: ");
-	print_array(first + middle, end - middle);
+	print_array(second + middle, end - middle);
 	for (k = begin; k < end; k++)
 	{
 		if (i < middle && (j >= end || second[i] <= second[j]))
