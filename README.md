@@ -63,4 +63,16 @@ Write in the file 3-O, the big O notations of the time complexity of the Quick s
 
 in the best case
 in the average case
-in the worst case
+in the worst casie
+
+
+
+4.  Shell sort - Knuth Sequence
+
+a function that sorts an array of integers in ascending order using the Shell sort algorithm, using the Knuth sequence
+
+Prototype: void shell_sort(int *array, size_t size);
+You must use the following sequence of intervals (a.k.a the Knuth sequence):
+n+1 = n * 3 + 1
+1, 4, 13, 40, 121, ...
+You’re expected to print the array each time you decrease the interval (See example below).
