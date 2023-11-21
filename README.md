@@ -76,6 +76,10 @@ You must use the following sequence of intervals (a.k.a the Knuth sequence):
 n+1 = n * 3 + 1
 1, 4, 13, 40, 121, ...5. 
 5.Cocktail shaker sort
- 
+a function that sorts a doubly linked list of integers in ascending order using the Cocktail shaker sort algorithm
 
+Prototype: void cocktail_sort_list(listint_t **list);
+You are not allowed to modify the integer n of a node. You have to swap the nodes themselves.
+You’re expected to print the list after each time you swap two elemen 
 
+6. Counting sort6. Counting sort6. Counting sort6. Counting sort6. Counting sort6. Counting sort
