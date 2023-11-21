@@ -83,3 +83,8 @@ You are not allowed to modify the integer n of a node. You have to swap the node
 You’re expected to print the list after each time you swap two elemen 
 
 6. Counting sort6. Counting sort6. Counting sort6. Counting sort6. Counting sort6. Counting sort
+
+7. Merge sort
+Write a function that sorts an array of integers in ascending order using the Merge sort algorithm
+
+
