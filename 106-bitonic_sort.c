@@ -10,6 +10,8 @@ void bitonic_sort(int *array, size_t size)
 	size_t i, j, k, l;
 	int temp;
 
+	if (array == NULL || size < 2)
+		return;
 	for (k = 2; k <= size; k *= 2)
 	{
 		for (j = k / 2; j > 0; j /= 2)
