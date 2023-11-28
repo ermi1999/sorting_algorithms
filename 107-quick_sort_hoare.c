@@ -1,7 +1,8 @@
 #include "sort.h"
 
 /**
- * partition - implements the partition for quick sort algorithm with Hoare Partition scheme.
+ * partition - implements the partition for quick sort
+ * algorithm with Hoare Partition scheme.
  * @array: The array.
  * @low: the the left side of the array.
  * @high: The right side of the array.
@@ -21,7 +22,7 @@ int partition(int *array, int low, int high, size_t size)
 		do {
 			i++;
 		} while (array[i] < pivot);
-		
+
 		do {
 			j--;
 		} while (array[j] > pivot);
@@ -59,7 +60,8 @@ void quick_sort_recursive(int *array, int low, int high, size_t size)
 }
 
 /**
- * quick_sort_hoare - this function sorts an array using quick sort algorithm with Hoare Partition scheme.
+ * quick_sort_hoare - this function sorts an array
+ * using quick sort algorithm with Hoare Partition scheme.
  * @array: The array to be sorted.
  * @size the size of the array.
  * Return: Nothing.
